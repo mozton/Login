@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vistas="clr-namespace:Login.Vistas.TutorialIntro"
+             mc:Ignorable="d"
+             x:Class="Login.Vistas.Presentacion"
+             >
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <CarouselView>
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type ContenView}">
+                    <vistas:Vista1 />
+                    <vistas:Vista2 />
+                    <vistas:Vista3 />
+
+                </x:Array>
+            </CarouselView.ItemsSource>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <ContentView Content="{Binding .}"/>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
+
+    </Grid>
+
+
+
+
+
+</ContentPage>
