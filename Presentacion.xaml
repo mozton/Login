@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Login.Vistas.Presentacion"
+             >
+
+
+
+    <Grid>
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     BackgroundColor="DarkGray">
+
+            <Image Source="LogLoginMinio.png" 
+                   HeightRequest="160"/>
+            <Label Text="Login" TextColor="WhiteSmoke"
+                   HorizontalOptions="Center"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   />
+            <Label Text="from"
+                   TextColor="WhiteSmoke"
+                   HorizontalOptions="Center"
+                   HeightRequest="115"
+                   />
+            <Label Text="Seccion0707"
+                   TextColor="SteelBlue"
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   />
+
+
+        </StackLayout>
+  </Grid>
